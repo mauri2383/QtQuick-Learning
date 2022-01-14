@@ -57,8 +57,8 @@ Step 4 is required if you want to investigate about the open issue #1
 
 1. The GeometryPlugin exports 2 components defined in pure QML (Square and Rect) and a component defined in C++ (Circle).  
    According to [this](https://www.qt.io/blog/qml-type-registration-in-qt-5.15) article, it is possible to generate the plugin.qmltypes automatically for the C++ defined components.   
-   **Is there a way to generate the plugin.qmltypes content also for the pure QML components?**
-   Currently, the plugin.qmltypes contains in fact only the information about the Circle. This can be verified also in the App project: QtCreator does not recognize Rect and Square as a type.
+   **Is there a way to generate the plugin.qmltypes content also for the pure QML components?**  
+   Currently, the plugin.qmltypes contains in fact only the information about the Circle. This can be verified also in the App project: QtCreator does not recognize Rect and Square as a type.  
    **N.B.** In this particular scenario, if the two projects are opened in the same QtCreator instance, the problem is hidden, because QtCreator can somehow retrieve the information of the QML components. This is not the standard scenario, because usually the plugins are 3rd party software 
 2. Let's suppose that we want to use the Circle component in QtDesigner.
    After opening the ShapeForm.ui there is a warning about the unrecognized component (Rect and Square). Go on and discard the warning, you can still interact with circle.  
