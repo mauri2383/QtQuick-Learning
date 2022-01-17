@@ -62,4 +62,5 @@ Step 4 is required if you want to investigate about the open issue #1
    **N.B.** In this particular scenario, if the two projects are opened in the same QtCreator instance, the problem is hidden, because QtCreator can somehow retrieve the information of the QML components. This is not the standard scenario, because usually the plugins are 3rd party software 
 2. Let's suppose that we want to use the Circle component in QtDesigner.
    After opening the ShapeForm.ui there is a warning about the unrecognized component (Rect and Square). Go on and discard the warning, you can still interact with circle.  
-   The circle has a property called **radius**, which allows to specify the size of the shape. **Is there a way to display such property in the *properties* secion of QtDesigner and therefore interact with it?** I could not find any tutorial on this.
+   The circle has a property called **radius**, which allows to specify the size of the shape. **Is there a way to display such property in the *properties* secion of QtDesigner and therefore interact with it?** I could not find any tutorial on this.  
+   Moreover I'd like to see the Circle component into the components Library, in order to be able to add it to the scene by a simple drag&drop like any other QML component
